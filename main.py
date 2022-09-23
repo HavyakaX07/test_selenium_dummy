@@ -13,7 +13,7 @@ chrome_options.add_argument("--no-sandbox")
 driver=webdriver.Chrome(os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
 
 driver.get("https://www.webmd.com/drugs/2/search?type=conditions&query=cough")
-var =driver.title()
+print(driver.title)
 
 from flask import Flask
 
@@ -28,7 +28,7 @@ app = Flask(__name__)
 @app.route('/')
 # ‘/’ URL is bound with hello_world() function.
 def hello_world():
-    return 'Hello World'+str(var)
+    return 'Hello World'
 
 
 # main driver function
