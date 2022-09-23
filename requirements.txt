@@ -1,3 +1,4 @@
 selenium
 chromedriver_autoinstaller
 flask
+gunicorn==20.0.4
