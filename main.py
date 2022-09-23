@@ -9,5 +9,4 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--no-sandbox")
 
 driver=webdriver.Chrome(os.environ.get("CHROMEDRIVER_PATH"), chrome_options=chrome_options)
-time.sleep(5)
 driver.get("https://www.webmd.com/drugs/2/search?type=conditions&query=cough")
